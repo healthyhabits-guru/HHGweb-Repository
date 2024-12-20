@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux';
 import { selectSelectedTabId } from "../../reduxModules/hhgSelectors";
 import Tabs from "../tabs/tabs";
 import CardGrid from "../cardGrid/cardGrid";
-import ResponsiveVideo from "../responsiveVideo/responsiveVideo";
 import ImageCarouselAndVideo from "../imageCarouselAndVideo/imageCarouselAndVideo";
+import ModalComp from "../modalComp/modalComp";
+import CircularImageRow from "../circularImageRow/circularImageRow";
 
 import './dashboard.css';
-import ModalComp from "../modalComp/modalComp";
 
 function Dashboard() {
     const selectedTabId = useSelector(selectSelectedTabId);
@@ -16,10 +16,10 @@ function Dashboard() {
         <>
             <Tabs />
             {selectedTabId === 1 ? <><ImageCarouselAndVideo />
-            <ModalComp/>
-            <CardGrid />
+                <ModalComp />
+                <CardGrid />
+                <CircularImageRow />
             </> : <></>}
-            {/* <ResponsiveVideo /> */}
         </>
     );
 }

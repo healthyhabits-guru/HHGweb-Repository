@@ -5,3 +5,4 @@ export const selectSelectedTabId = (state) => state.hhg.selectedTabId;
 export const selectFeedback = (state) => state.hhg.feedback;
 export const selectModalOpenStatus = (state) => state.hhg.modalOpenStatus;
 export const selectEmojisData = (state) => state.hhg.emojisData;
+export const selectOneMinuteVideosData = (state) => state.hhg.oneMinuteVideosData;

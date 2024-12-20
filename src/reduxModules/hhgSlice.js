@@ -86,6 +86,38 @@ const initialState = {
         { id: 3, emoji: "😐", label: "Neutral" },
         { id: 4, emoji: "😊", label: "Happy" },
         { id: 5, emoji: "😍", label: "Very Happy" }
+    ],
+    oneMinuteVideosData: [
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 2", subtitle: "Subtitle 2" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 3", subtitle: "Subtitle 3" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 4", subtitle: "Subtitle 4" },
+        { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 5", subtitle: "Subtitle 5" }
     ]
 };
 
