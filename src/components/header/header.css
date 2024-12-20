@@ -1,0 +1,84 @@
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Left section: Logo and title */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Optional: Circular logo */
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #610000;
+    margin: 0;
+}
+
+/* Right section: Admin Login button */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.admin-login-btn {
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: lightgray;
+    /* Bootstrap primary blue color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left {
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        font-size: 18px;
+    }
+
+    .admin-login-btn {
+        width: 100%;
+        /* Make button full-width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-title {
+        font-size: 16px;
+    }
+
+    .admin-login-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
