@@ -1,0 +1,73 @@
+/* Container styling */
+.emoji-feedback-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Emoji row (flex container) */
+.emoji-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* Prevent wrapping to the next line */
+  overflow-x: auto;
+  /* Add horizontal scrolling for very small screens */
+  padding: 10px 0;
+}
+
+/* Emoji button styling */
+.emoji-button {
+  font-size: 40px;
+  /* Default emoji size */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+  /* Remove extra spacing inside the button */
+  margin: 7px;
+  /* Ensure no spacing between buttons */
+}
+
+/* Remove space between emojis */
+.emoji-row>.emoji-button+.emoji-button {
+  margin-left: 0;
+  /* No spacing between adjacent emojis */
+}
+
+/* Highlight selected emoji */
+.emoji-button.selected {
+  transform: scale(0.7);
+  /* Enlarge selected emoji */
+  position: relative;
+  /* Required for the background circle */
+  z-index: 1;
+  /* Ensure it appears above others */
+}
+
+/* Add circular background */
+.emoji-button.selected::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  /* Adjust size for the circle */
+  height: 80px;
+  background: rgba(255, 229, 100, 0.5);
+  /* Light yellow background */
+  border-radius: 50%;
+  /* Makes it a perfect circle */
+  /* box-shadow: 0 0 15px #ffffff; */
+  /* Glow effect */
+  transform: translate(-50%, -50%);
+  /* Center the circle */
+  z-index: -1;
+  /* Place the background behind the emoji */
+}
+
+/* Feedback text styling */
+.feedback-text {
+  font-size: 18px;
+  color: #555;
+}

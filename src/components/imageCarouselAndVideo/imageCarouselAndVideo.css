@@ -1,0 +1,162 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+/* .circles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 15px;
+}
+
+.circle {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    width: 54px;
+    height: 54px;
+    margin-top: 16px;
+}
+
+.circle-shape {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto -12px;
+} */
+
+/* Carousel.css */
+.swiper-slide img {
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide .image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.swiper-slide .image-overlay h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.swiper-slide .image-overlay p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Swiper navigation buttons (next and previous) */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    /* Change to your preferred color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: Add a semi-transparent background */
+    border-radius: 50%;
+    /* Optional: Make the buttons round */
+    width: 50px;
+    /* Optional: Adjust the button size */
+    height: 50px;
+    /* Optional: Adjust the button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+    /* Adjust the size of the arrows */
+}
+
+/* Optional: Change color on hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #f1f1f1;
+    /* Hover color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Hover background */
+}
+
+.swiper-pagination-bullet {
+    background-color: #610000;  /* Change dot color */
+    width: 15px;  /* Increase size of the dot */
+    height: 15px;  /* Increase size of the dot */
+    margin: 0 5px;  /* Space between dots */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover */
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff;  /* Color when dot is active */
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        /* Reverse the order: circles appear above */
+        gap: 50px 15px;
+    }
+
+    /* .circles {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .circle-shape {
+        width: 50px;
+        height: 50px;
+    } */
+
+    .swiper-slide .image-overlay {
+        bottom: 5px;
+        left: 5px;
+        padding: 3px 6px;
+    }
+
+    .swiper-slide .image-overlay h4 {
+        font-size: 14px;
+    }
+
+    .swiper-slide .image-overlay p {
+        font-size: 10px;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .circle-shape {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle p {
+        font-size: 12px;
+    }
+} */

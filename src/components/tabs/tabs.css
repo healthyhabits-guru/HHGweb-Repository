@@ -1,0 +1,33 @@
+.tab-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab {
+    flex: 1;
+    min-width: 120px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    background-color: #610000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 25px 25px 0 0;
+}
+
+/* .tab:hover {
+    background-color: #610000;
+    color: #F0D822;
+} */
+
+.selected-tab {
+    background-color: #610000;
+    color: #F0D822;
+    border-radius: 25px 25px 0 0;
+}
