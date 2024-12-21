@@ -37,7 +37,7 @@
 
 /* Highlight selected emoji */
 .emoji-button.selected {
-  transform: scale(0.7);
+  transform: scale(1.0);
   /* Enlarge selected emoji */
   position: relative;
   /* Required for the background circle */

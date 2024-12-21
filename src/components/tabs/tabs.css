@@ -5,6 +5,7 @@
     overflow-x: scroll;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
 }
 
 .tab {

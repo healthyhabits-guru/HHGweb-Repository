@@ -10,7 +10,7 @@ const Header = () => {
                     alt="Logo"
                     className="header-logo"
                 />
-                <h1 className="header-title">Website Title</h1>
+                <h1 className="header-title">ఆరోగ్యకరమైన అలవాట్లు</h1>
             </div>
             <div className="header-right">
                 <button className="admin-login-btn">Admin Login</button>

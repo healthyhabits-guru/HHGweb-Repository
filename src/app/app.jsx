@@ -6,6 +6,8 @@ import RatingComp from '../components/ratingComp/ratingComp';
 import Footer from '../components/footer/footer';
 
 import './app.css';
+import Tabs from '../components/tabs/tabs';
+import NoPage from '../components/noPage/noPage';
 
 function App() {
   return (
@@ -17,6 +19,25 @@ function App() {
           <RatingComp />
           <Footer />
         </>} />
+        <Route path="/awareness" element={<>
+          <Header />
+          <Tabs />
+          <RatingComp />
+          <Footer />
+        </>} />
+        <Route path="/inspiration" element={<>
+          <Header />
+          <Tabs />
+          <RatingComp />
+          <Footer />
+        </>} />
+        <Route path="/entertainment" element={<>
+          <Header />
+          <Tabs />
+          <RatingComp />
+          <Footer />
+        </>} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -16,16 +16,14 @@ function Dashboard() {
     return (
         <>
             <Tabs />
-            {selectedTabId === 1 ? <>
-                <ImageCarouselAndVideo />
-                <ModalComp />
-                <CardGrid />
-                <div >
-                    <p className="video-wrapper">Devotional Video</p>
-                    <VideoComp />
-                </div>
-                <CircularImageRow />
-            </> : <></>}
+            <ImageCarouselAndVideo />
+            <ModalComp />
+            <CardGrid />
+            <div >
+                <p className="video-wrapper">Devotional Video</p>
+                <VideoComp />
+            </div>
+            <CircularImageRow />
         </>
     );
 }

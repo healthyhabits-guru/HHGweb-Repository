@@ -1,0 +1,54 @@
+/* Container for the "No Page Found" message */
+.no-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px;
+    /* Padding for smaller devices */
+}
+
+/* Title (e.g., 404) */
+.no-page-title {
+    font-size: 6rem;
+    /* Large font for the error code */
+    font-weight: bold;
+    color: #333;
+    /* Darker color for contrast */
+    margin: 0;
+}
+
+/* Message text */
+.no-page-message {
+    font-size: 1.5rem;
+    color: #666;
+    /* Medium contrast text */
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .no-page-title {
+        font-size: 4rem;
+        /* Adjust size for tablets */
+    }
+
+    .no-page-message {
+        font-size: 1.2rem;
+        /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .no-page-title {
+        font-size: 3rem;
+        /* Adjust size for mobile devices */
+    }
+
+    .no-page-message {
+        font-size: 1rem;
+    }
+}

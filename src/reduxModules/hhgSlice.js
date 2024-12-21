@@ -81,11 +81,30 @@ const initialState = {
     feedback: 0,
     modalOpenStatus: false,
     emojisData: [
-        { id: 1, emoji: "😠", label: "Angry" },
-        { id: 2, emoji: "😟", label: "Sad" },
-        { id: 3, emoji: "😐", label: "Neutral" },
-        { id: 4, emoji: "😊", label: "Happy" },
-        { id: 5, emoji: "😍", label: "Very Happy" }
+        {
+            id: 1, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
+                <circle cx="9" cy="9" r="1" fill="black" />
+                <circle cx="15" cy="9" r="1" fill="black" />
+                <path d="M15 15C15 15 13 13 11 13C9 13 7 15 7 15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>, label: "Sad"
+        },
+        {
+            id: 2, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
+                <circle cx="9" cy="9" r="1" fill="black" />
+                <circle cx="15" cy="9" r="1" fill="black" />
+                <line x1="8" y1="15" x2="16" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
+            </svg>, label: "Neutral"
+        },
+        {
+            id: 3, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
+                <circle cx="9" cy="9" r="1" fill="black" />
+                <circle cx="15" cy="9" r="1" fill="black" />
+                <path d="M7 15C7 15 9 17 11 17C13 17 15 15 15 15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>, label: "Happy"
+        }
     ],
     oneMinuteVideosData: [
         { src: "https://via.placeholder.com/800x400?text=Image+1", caption: "Caption 1", subtitle: "Subtitle 1" },

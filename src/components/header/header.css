@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-top: 100px;
 }
 
 /* Left section: Logo and title */
@@ -21,7 +22,10 @@
 }
 
 .header-title {
-    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     font-weight: bold;
     color: #610000;
     margin: 0;
@@ -59,6 +63,10 @@
 
     .header-title {
         font-size: 18px;
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .admin-login-btn {
@@ -75,6 +83,10 @@
 
     .header-title {
         font-size: 16px;
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .admin-login-btn {
