@@ -3,7 +3,7 @@ import "./responsiveVideo.css";
 
 const ResponsiveVideo = () => {
     return (
-        <div className="video-container">
+        <div className="responsive-video-container">
             <iframe
                 src={`https://www.youtube.com/embed/7QUYD8-Ifss?si=DcGxeR5sv_SX65bq;`}
                 title="YouTube video player"

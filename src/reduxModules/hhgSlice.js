@@ -39,42 +39,49 @@ const initialState = {
             id: 1,
             image: "https://via.placeholder.com/800x400?text=Image+1",
             title: "Card Title 1",
+            type: "awareness",
             description: "This is a short description for card 1."
         },
         {
             id: 2,
             image: "https://via.placeholder.com/800x400?text=Image+2",
             title: "Card Title 2",
+            type: "inspiration",
             description: "This is a slightly longer description that will get truncated if it exceeds two lines."
         },
         {
             id: 3,
             image: "https://via.placeholder.com/800x400?text=Image+3",
             title: "Card Title 3",
+            type: "entertainment",
             description: "This is a short description for card 1."
         },
         {
             id: 4,
             image: "https://via.placeholder.com/800x400?text=Image+1",
             title: "Card Title 4",
+            type: "awareness",
             description: "This is a slightly longer description that will get truncated if it exceeds two lines."
         },
         {
             id: 5,
             image: "https://via.placeholder.com/800x400?text=Image+1",
             title: "Card Title 5",
+            type: "inspiration",
             description: "This is a short description for card 1."
         },
         {
             id: 6,
             image: "https://via.placeholder.com/800x400?text=Image+1",
             title: "Card Title 6",
+            type: "entertainment",
             description: "This is a slightly longer description that will get truncated if it exceeds two lines."
         },
         {
             id: 7,
             image: "https://via.placeholder.com/800x400?text=Image+7",
             title: "Card Title 7",
+            type: "awareness",
             description: "This is a short description for card 1."
         }
     ],
@@ -82,28 +89,13 @@ const initialState = {
     modalOpenStatus: false,
     emojisData: [
         {
-            id: 1, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
-                <circle cx="9" cy="9" r="1" fill="black" />
-                <circle cx="15" cy="9" r="1" fill="black" />
-                <path d="M15 15C15 15 13 13 11 13C9 13 7 15 7 15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>, label: "Sad"
+            id: 1, emoji: "sad-icon", label: "Sad"
         },
         {
-            id: 2, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
-                <circle cx="9" cy="9" r="1" fill="black" />
-                <circle cx="15" cy="9" r="1" fill="black" />
-                <line x1="8" y1="15" x2="16" y2="15" stroke="black" strokeWidth="2" strokeLinecap="round" />
-            </svg>, label: "Neutral"
+            id: 2, emoji: "neutral-icon", label: "Neutral"
         },
         {
-            id: 3, emoji: <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
-                <circle cx="9" cy="9" r="1" fill="black" />
-                <circle cx="15" cy="9" r="1" fill="black" />
-                <path d="M7 15C7 15 9 17 11 17C13 17 15 15 15 15" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>, label: "Happy"
+            id: 3, emoji: "happy-icon", label: "Happy"
         }
     ],
     oneMinuteVideosData: [

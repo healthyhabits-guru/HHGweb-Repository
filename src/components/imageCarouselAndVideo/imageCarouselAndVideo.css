@@ -1,10 +1,11 @@
-.container {
+.image-carousel-video-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 /* .circles {
@@ -104,21 +105,27 @@
 }
 
 .swiper-pagination-bullet {
-    background-color: #610000;  /* Change dot color */
-    width: 15px;  /* Increase size of the dot */
-    height: 15px;  /* Increase size of the dot */
-    margin: 0 5px;  /* Space between dots */
-    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover */
-  }
+    background-color: #610000;
+    /* Change dot color */
+    width: 15px;
+    /* Increase size of the dot */
+    height: 15px;
+    /* Increase size of the dot */
+    margin: 0 5px;
+    /* Space between dots */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for hover */
+}
 
-  .swiper-pagination-bullet-active {
-    background-color: #ffffff;  /* Color when dot is active */
-  }
-  
+.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    /* Color when dot is active */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .image-carousel-video-container {
         flex-direction: column-reverse;
         /* Reverse the order: circles appear above */
         gap: 50px 15px;

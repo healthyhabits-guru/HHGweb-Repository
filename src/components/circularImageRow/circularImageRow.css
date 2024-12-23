@@ -18,6 +18,7 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* Customize scrollbar for webkit browsers (Chrome, Edge, Safari) */

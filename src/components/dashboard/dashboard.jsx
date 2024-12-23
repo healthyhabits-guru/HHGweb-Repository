@@ -1,6 +1,4 @@
 import React from "react";
-import { useSelector } from 'react-redux';
-import { selectSelectedTabId } from "../../reduxModules/hhgSelectors";
 import Tabs from "../tabs/tabs";
 import CardGrid from "../cardGrid/cardGrid";
 import VideoComp from "../videoComp/videoComp";
@@ -11,7 +9,6 @@ import CircularImageRow from "../circularImageRow/circularImageRow";
 import './dashboard.css';
 
 function Dashboard() {
-    const selectedTabId = useSelector(selectSelectedTabId);
 
     return (
         <>

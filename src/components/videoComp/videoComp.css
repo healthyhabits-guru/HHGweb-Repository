@@ -1,9 +1,19 @@
+.video-comp-container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    border: 1px solid lightgray;
+}
+
 .iframe-wrapper {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    order: 1;
 }
 
 .iframe-wrapper iframe {
@@ -13,4 +23,26 @@
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.video-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #333;
+    padding: 0 1rem;
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .video-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-description {
+        font-size: 0.8rem;
+        padding: 0;
+    }
 }

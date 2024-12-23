@@ -17,7 +17,7 @@ const ImageCarouselAndVideo = () => {
     // }
 
     return (
-        <div className="container">
+        <div className="image-carousel-video-container">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={10}

@@ -1,11 +1,11 @@
-.video-container {
+.responsive-video-container {
   position: relative;
   width: 800px;
   height: 500px;
   overflow: hidden;
 }
 
-.video-container iframe {
+.responsive-video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,21 +17,21 @@
 /* Responsive Design */
 /* Small devices (portrait phones, less than 576px) */
 @media (max-width: 376px) {
-  .video-container {
+  .responsive-video-container {
     width: 250px;
     height: 300px;
   }
 }
 
 @media (min-width: 377px) and (max-width: 476.98px) {
-  .video-container {
+  .responsive-video-container {
     width: 300px;
     height: 300px;
   }
 }
 
 @media (min-width: 477px) and (max-width: 767.98px) {
-  .video-container {
+  .responsive-video-container {
     width: 400px;
     height: 400px;
   }
@@ -39,7 +39,7 @@
 
 /* Medium devices (landscape phones/tablets, 576px to 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .video-container {
+  .responsive-video-container {
     width: 400px;
     height: 400px;
   }
@@ -47,7 +47,7 @@
 
 /* Large devices (desktops, 768px to 1200px) */
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .video-container {
+  .responsive-video-container {
     width: 600px;
     height: 400px;
   }
@@ -55,7 +55,7 @@
 
 /* Extra large devices (large desktops, 1200px and above) */
 @media (min-width: 1200px) {
-  .video-container {
+  .responsive-video-container {
     width: 800px;
     height: 500px;
   }

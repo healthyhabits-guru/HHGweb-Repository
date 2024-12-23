@@ -2,6 +2,27 @@ import React from "react";
 import "./header.css";
 
 const Header = () => {
+    // const [deviceType, setDeviceType] = useState("laptop");
+
+    // useEffect(() => {
+    //     const checkDeviceType = () => {
+    //         if (window.matchMedia("(max-width: 768px)").matches) {
+    //             setDeviceType("mobile");
+    //         } else if (window.matchMedia("(max-width: 1024px)").matches) {
+    //             setDeviceType("tablet");
+    //         } else {
+    //             setDeviceType("laptop");
+    //         }
+    //     };
+
+    //     checkDeviceType(); // Initial check
+    //     window.addEventListener("resize", checkDeviceType);
+
+    //     return () => {
+    //         window.removeEventListener("resize", checkDeviceType);
+    //     };
+    // }, []);
+
     return (
         <header className="header">
             <div className="header-left">

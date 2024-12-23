@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from "react-router-dom";
 import { selectTabsData } from "../../reduxModules/hhgSelectors";
@@ -14,37 +14,38 @@ function Tabs() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (location?.pathname === '/') {
+        const tabName = location?.pathname?.split("/")[1];
+        if (tabName === '') {
             setSelectedTab(0);
             dispatch(updateSelectedTabId(1))
         }
-        else if (location?.pathname === '/awareness') {
+        else if (tabName === 'awareness') {
             setSelectedTab(1);
             dispatch(updateSelectedTabId(2))
         }
-        else if (location?.pathname === '/inspiration') {
+        else if (tabName === 'inspiration') {
             setSelectedTab(2);
             dispatch(updateSelectedTabId(3))
         }
-        else if (location?.pathname === '/entertainment') {
+        else if (tabName === 'entertainment') {
             setSelectedTab(3);
             dispatch(updateSelectedTabId(4))
         }
-    }, [location]);
+    }, [dispatch, location]);
 
     const handleTabClick = (index, tab) => {
         setSelectedTab(index);
         if (tab.id === 1) {
-            navigate("/");
+            navigate("/", { replace: true });
         }
         else if (tab.id === 2) {
-            navigate("/awareness");
+            navigate("/awareness", { replace: true });
         }
         else if (tab.id === 3) {
-            navigate("/inspiration");
+            navigate("/inspiration", { replace: true });
         }
         else if (tab.id === 4) {
-            navigate("/entertainment");
+            navigate("/entertainment", { replace: true });
         }
         dispatch(updateSelectedTabId(tab.id))
     };

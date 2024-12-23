@@ -2,8 +2,17 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectEmojisData, selectFeedback } from '../../reduxModules/hhgSelectors';
 import { updateFeedback } from '../../reduxModules/hhgSlice';
+import SadIcon from '../sadIcon/sadIcon';
+import NeutralIcon from '../neutralIcon/neutralIcon';
+import HappyIcon from '../happyIcon/happyIcon';
 
 import './ratingComp.css';
+
+const svgIcons = {
+    "sad-icon": <SadIcon />,
+    "neutral-icon": <NeutralIcon />,
+    "happy-icon": <HappyIcon />
+};
 
 const RatingComp = () => {
     const [selectedFeedback, setSelectedFeedback] = useState(null);
@@ -22,14 +31,13 @@ const RatingComp = () => {
             <div className="emoji-list">
                 {emojis.map((item, index) => (
                     <button
-                        key={index} 
+                        key={index}
                         disabled={feedbackValue !== 0}
                         className={`emoji-button ${selectedFeedback === index ? "selected" : ""
                             }`}
-                        onClick={() => handleFeedbackClick(index, item)}
-                    >
+                        onClick={() => handleFeedbackClick(index, item)}>
                         <span role="img" aria-label={item.label}>
-                            {item.emoji}
+                            {svgIcons[item.emoji]}
                         </span>
                     </button>
                 ))}
