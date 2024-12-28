@@ -8,6 +8,7 @@ import CardGrid from '../components/cardGrid/cardGrid';
 import VideoComp from '../components/videoComp/videoComp';
 import RatingComp from '../components/ratingComp/ratingComp';
 import Footer from '../components/footer/footer';
+import Login from '../components/login/login';
 
 import './app.css';
 
@@ -49,6 +50,9 @@ function App() {
           <CardGrid />
           <RatingComp />
           <Footer />
+        </>} />
+        <Route path="/login" element={<>
+          <Login />
         </>} />
         <Route path="*" element={<NoPage />} />
       </Routes>
