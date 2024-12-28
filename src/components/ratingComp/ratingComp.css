@@ -25,8 +25,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0;
   /* Remove extra spacing inside the button */
-  margin: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   /* Ensure no spacing between buttons */
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Remove space between emojis */
@@ -49,12 +52,12 @@
 .emoji-button.selected::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  width: 80px;
+  width: 57px;
   /* Adjust size for the circle */
-  height: 80px;
-  background: rgba(255, 229, 100, 0.5);
+  height: 53px;
+  background: yellow;
   /* Light yellow background */
   border-radius: 50%;
   /* Makes it a perfect circle */
